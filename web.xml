@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Dynamicform</display-name>
+  <servlet>
+    <servlet-name>dynamic</servlet-name>
+    <servlet-class>form</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dynamic</servlet-name>
+    <url-pattern>/page</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>edith</servlet-name>
+    <servlet-class>edith</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edith</servlet-name>
+    <url-pattern>/edith</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+</web-app>
